@@ -16,6 +16,7 @@ body {
 
 .page {
   background-color: white;
+  display: none;
 }
 #side-menu {
   padding: 10px 5px 5px 10px;
