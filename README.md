@@ -1,6 +1,6 @@
-# aimoldovan.github.io
+# Adrian Moldovan's CV
 
-My Personal CV made with `HTML`, CSS and pure JS
+My Personal CV made with `HTML`, `CSS` and pure `JS`
 
 ## Live preview
 
