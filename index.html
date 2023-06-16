@@ -14,10 +14,10 @@
       <h2 id="job-title">Project Manager @ Indeco Soft</h2>
 
       <ul id="top-menu-bar">
-        <li><a href="#">Home</a></li>
+        <li><a href="#" onclick="showHome()">Home</a></li>
         <li><a href="#" onclick="showSkills()">Skills</a></li>
-        <li><a href="#">Known Languages</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="showLanguages()">Known Languages</a></li>
+        <li><a href="#" onclick="showProjects()">Projects</a></li>
       </ul>
     </header>
 
@@ -26,6 +26,17 @@
         <section id="Contact">
           <h2>Contact</h2>
           <form action="" method="get">
+            <div>
+              <label for="name">Your name</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
             <div>
               <label for="email">Enter your email</label>
               <br />
@@ -38,16 +49,17 @@
               />
             </div>
             <div>
-              <label for="name">Your name</label>
+              <label for="message">Enter your message</label>
               <br />
               <input
                 type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your name"
+                name="messageContent"
+                id="message"
+                placeholder="Hello there..."
                 required
               />
             </div>
+          </br>
             <button type="submit">Contact me</button>
           </form>
         </section>
@@ -70,7 +82,7 @@
           </ul>
         </section>
 
-        <section class="page">
+        <section id="languages" class="page">
           <h2>Known Languages</h2>
           <table border="1">
             <tr>
@@ -83,13 +95,28 @@
             </tr>
             <tr>
               <td>English</td>
-              <td>Professional</td>
+              <td>Advanced</td>
             </tr>
             <tr>
               <td>French</td>
-              <td>Bien</td>
+              <td>Un petit peu</td>
             </tr>
           </table>
+        </section>
+        <section id="projects" class="page">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <a href="https://greentop.space/" target="_blank"
+                >GREENTOP - Agro-Biodiversity</a
+              >
+            </li>
+            <li>
+              <a href="https://integrate.indecosoft.ro/" target="_blank"
+                >INTEGRATE</a
+              >
+            </li>
+          </ul>
         </section>
       </div>
     </section>

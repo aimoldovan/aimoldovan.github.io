@@ -1,9 +1,25 @@
-var page = document.getElementById("home");
-page.style.display = "block";
-console.log("home", home);
+function showHome() {
+  var page = document.getElementById("home");
+  page.style.display = "block";
+}
 
 function showSkills() {
   var page = document.getElementById("skills");
   page.style.display = "block";
 }
-console.log("skills", skills);
+
+function showLanguages() {
+  var page = document.getElementById("languages");
+  page.style.display = "block";
+}
+function showProjects() {
+  var page = document.getElementById("projects");
+  page.style.display = "block";
+}
+
+showHome();
+
+// function switchMenuTabs() {
+//   var page = document.getElementById(main);
+
+// }
