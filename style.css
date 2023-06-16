@@ -1,6 +1,14 @@
 html {
   height: 100%;
 }
+#numepozafunctie {
+  display: flex;
+}
+
+#pozaprofil {
+  padding: 20px 10px 0 10px;
+}
+
 body {
   margin: 0;
   min-height: 100%;
@@ -77,4 +85,7 @@ h2 {
 }
 #top-menu-bar a:hover {
   background-color: #057988;
+}
+#message {
+  height: 100px;
 }
