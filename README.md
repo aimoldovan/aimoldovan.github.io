@@ -8,8 +8,8 @@ My Personal CV made with `HTML`, `CSS` and pure `JS`
 
 ## Developer notes:
 
-To start web servar use:
+To start web server use:
 
 - 'CTRL + SHIFT + P'
-- **Browser sinc: Server mode in browser**
+- **Browser sync: Server mode in browser**
 - type '/' and press 'Enter'
