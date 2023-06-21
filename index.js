@@ -13,6 +13,19 @@ function showPage(id) {
   page.style.display = "block";
   activePage = id;
 }
+function clickOnMenu(e) {
+  var link = e.target.closest("a");
+  // console.warm("click", link, e.target);
+  if (link) {
+    var id = link.dataset.page;
+    // console.warn("click %o menu", e.target.getAttribute("data-page"));
+    console.warn("click %o menu", id);
+    if (id) {
+      showPage(id);
+    }
+  }
+}
 
 //start our code
 showPage(activePage);
+document.getElementById("top-menu-bar").addEventListener("click", clickOnMenu);
