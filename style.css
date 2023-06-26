@@ -111,3 +111,25 @@ h2 {
 #message {
   height: 100px;
 }
+
+footer {
+  background-color: #0798ab;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer a:visited {
+  color: #fff;
+}
+
+footer a:hover {
+  background-color: #057988;
+  transition: 0.5s;
+}
