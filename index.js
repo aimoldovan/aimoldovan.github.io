@@ -41,11 +41,17 @@ function clickOnMenu(e) {
     }
   }
 }
+function sortByEndorsements(a, b) {
+  return b.endorsement - a.endorsement;
+}
+
+function sortByName(a, b) {
+  return a.name.localeCompare(b.name);
+}
 
 function showSkills(skills) {
+  skills.sort(sortByEndorsements);
   var htmlSkills = skills.map(function (skill) {
-    //  <li class="favorite">HTML</li>
-    console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name} <span>- ${skill.endorsement}</span></li>`;
   });
