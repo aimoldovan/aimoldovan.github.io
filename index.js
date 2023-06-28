@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 //utilities functions
 
 function $(selector) {
@@ -42,6 +42,18 @@ function clickOnMenu(e) {
   }
 }
 
+function showSkills() {
+  var skills = ["HTML", "css", "JS"];
+  var htmlSkills = skills.map(function (skill) {
+    //  <li class="favorite">HTML</li>
+    return `<li>${skill}</li>`;
+  });
+  var ul = $("#skills ul");
+  ul.innerHTML = htmlSkills.join("");
+}
+
 //start our code
+
 showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
+showSkills();
