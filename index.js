@@ -1,4 +1,15 @@
-let activePage = "skills";
+let activePage = "home";
+
+(function () {
+  const hash = document.location.hash.substring(1);
+  if (hash) {
+    const link = $(`#top-menu-bar a[data-page=${hash}]`);
+    if (link) {
+      activePage = hash;
+    }
+  }
+})();
+
 //utilities functions
 
 function $(selector) {
@@ -38,6 +49,7 @@ function clickOnMenu(e) {
     console.warn("click %o menu", id);
     if (id) {
       showPage(id);
+      document.location.hash = `#${id}`;
     }
   }
 }
@@ -50,7 +62,6 @@ function sortByName(a, b) {
 }
 
 function showSkills(skills) {
-  console.warn("am intrat in funtia show", skills);
   skills.sort(sortByEndorsements);
   const htmlSkills = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
