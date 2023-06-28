@@ -1,5 +1,6 @@
 [
-  { "name": "HTML", "favorite": true },
-  { "name": "css" },
-  { "name": "JS", "favorite": true }
+  { "name": "HTML", "endorsement": 10, "favorite": true },
+  { "name": "css", "endorsement": 15 },
+  { "name": "JS", "endorsement": 20, "favorite": true },
+  { "name": "MS Excel", "endorsement": 25 }
 ]

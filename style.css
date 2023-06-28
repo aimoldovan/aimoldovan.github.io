@@ -85,6 +85,11 @@ h2 {
   font-weight: bold;
 }
 
+#skills span {
+  color: grey;
+  font-weight: 100;
+}
+
 #top-menu-bar {
   text-align: center;
   background-color: #0798ab;
