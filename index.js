@@ -50,6 +50,7 @@ function sortByName(a, b) {
 }
 
 function showSkills(skills) {
+  console.warn("am intrat in funtia show", skills);
   skills.sort(sortByEndorsements);
   const htmlSkills = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
@@ -61,12 +62,8 @@ function showSkills(skills) {
 
 function loadSkills() {
   const response = fetch("skills.json");
-  const loaded = response.then((r) => {
-    return r.json();
-  });
-  loaded.then((skills) => {
-    showSkills(skills);
-  });
+  const loaded = response.then((r) => r.json());
+  loaded.then(showSkills);
   // ...
 }
 
