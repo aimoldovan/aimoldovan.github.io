@@ -6,13 +6,13 @@ function $(selector) {
 }
 
 function hide(id) {
-  console.info("hide %o element", id);
+  // console.info("hide %o element", id);
   $(`#${id}`).style.display = "none";
 }
 
 function show(id) {
   const page = $("#" + id);
-  console.info("show %o", id, page);
+  // console.info("show %o", id, page);
   page.style.display = "block";
 }
 
@@ -51,7 +51,7 @@ function sortByName(a, b) {
 
 function showSkills(skills) {
   skills.sort(sortByEndorsements);
-  const htmlSkills = skills.map(function (skill) {
+  const htmlSkills = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name} <span>- ${skill.endorsement}</span></li>`;
   });
@@ -61,10 +61,10 @@ function showSkills(skills) {
 
 function loadSkills() {
   const response = fetch("skills.json");
-  const loaded = response.then(function (r) {
+  const loaded = response.then((r) => {
     return r.json();
   });
-  loaded.then(function (skills) {
+  loaded.then((skills) => {
     showSkills(skills);
   });
   // ...

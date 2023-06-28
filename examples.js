@@ -12,7 +12,23 @@ var person = {
 // object (DOM, other)
 var el = document.getElementById("el");
 
-console.log(typeof skills, skills, age);
-console.log("my name", name);
+function printInfo() {
+  console.log(typeof skills, skills, age);
+  console.log("my name", name);
+  console.warn("person type", typeof person, person);
+}
 
-console.warn("person type", typeof person, person);
+var fVariable = () => {
+  console.info("functie ca variabila");
+};
+
+var f1Variable = function () {
+  console.info("functie ca variabila");
+};
+
+printInfo();
+fVariable();
+
+console.info("t1", typeof printInfo, printInfo);
+console.info("t2", typeof fVariable, fVariable);
+console.info("t4", typeof f1Variable, f1Variable);
